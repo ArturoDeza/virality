@@ -41,4 +41,5 @@ Moreoever, we create the relative features by always subtracting the nonviral de
 ### Download DECAF6 features:
 http://brie.uchicago.edu/ftp-www/Viral_total/viral_decaf6_feats.mat
 
-
+### ArXiv paper pre-print:
+http://arxiv.org/abs/1503.02318
