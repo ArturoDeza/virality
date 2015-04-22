@@ -47,12 +47,12 @@ http://arxiv.org/abs/1503.02318
 ### Virality Project Website
 http://arturodeza.github.io/virality/
 
-### Bibtex Citation
+### BibTex Citation
 
-```@inproceedings{deza2015virality, Author = {Arturo Deza and Devi Parikh}, 
-Title = {Understanding Image Virality}, 
-Year = {2015}, 
-booktitle = {IEEE Conference on Computer Vision and Pattern Recognition (CVPR)} }```
+    @inproceedings{deza2015virality, Author = {Arturo Deza and Devi Parikh}, 
+    Title = {Understanding Image Virality}, 
+    Year = {2015}, 
+    booktitle = {IEEE Conference on Computer Vision and Pattern Recognition (CVPR)} }
 
 ### License
 
