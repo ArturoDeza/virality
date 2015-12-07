@@ -19,6 +19,12 @@ pair_matrix = pair_matrix.pair_matrix_spot;
 virality_label = load('./virality_label.mat');
 virality_label = virality_label.virality_label_spot;
 
+% Load unique_offset_pairs_sort.
+% These will be the test images.
+
+unique_pairs = load('./unique_offset_pairs_sort.mat');
+unique_pairs = unique_pairs.unique_offset_pairs_sort;
+
 Top_Pairs = load('./Top_Pairs.mat');
 Top_Pairs = Top_Pairs.Top_Pairs;
 
@@ -88,9 +94,9 @@ for k=1:1
 
 	% Do 1st Attribute split
 	
-	split_A3{k}{1}.ClassName = './positive';
-	split_A3{k}{2}.ClassName = './negative';
-	split_A3{k}{3}.ClassName = './neutral';
+	split_A5{k}{1}.ClassName = './positive';
+	split_A5{k}{2}.ClassName = './negative';
+	split_A5{k}{3}.ClassName = './neutral';
 	
 	
 	j_p_train = 1;
@@ -112,37 +118,37 @@ for k=1:1
 		if sum(i==indx_u_250)==0 
 		%if A_10(k,i)==1
 			% If element is positive
-			if Attribute_Matrix(i,3) == 1
+			if Attribute_Matrix(i,5) == 1
 				if virality_label(i) == 1
-					split_A3{k}{1}.Training{j_p_train} = img_str_jpg;
-					split_A3{k}{1}.TrainingID{j_p_train} = img_id;
+					split_A5{k}{1}.Training{j_p_train} = img_str_jpg;
+					split_A5{k}{1}.TrainingID{j_p_train} = img_id;
 					j_p_train = j_p_train + 1;
 				elseif virality_label(i) == 0
-					split_A3{k}{2}.Training{j_n_train} = img_str_jpg;
-					split_A3{k}{2}.TrainingID{j_n_train} = img_id;
+					split_A5{k}{2}.Training{j_n_train} = img_str_jpg;
+					split_A5{k}{2}.TrainingID{j_n_train} = img_id;
 					j_n_train = j_n_train + 1;		
 				else
 					%Do nothing
 				end
 			
 			%If element is negative
-			elseif Attribute_Matrix(i,3) == -1
+			elseif Attribute_Matrix(i,5) == -1
 				if virality_label(i) == 1
-					split_A3{k}{2}.Training{j_n_train} = img_str_jpg;
-					split_A3{k}{2}.TrainingID{j_n_train} = img_id;
+					split_A5{k}{2}.Training{j_n_train} = img_str_jpg;
+					split_A5{k}{2}.TrainingID{j_n_train} = img_id;
 					j_n_train = j_n_train + 1;
 				elseif virality_label(i) == 0
-					split_A3{k}{1}.Training{j_p_train} = img_str_jpg;
-					split_A3{k}{1}.TrainingID{j_p_train} = img_id;
+					split_A5{k}{1}.Training{j_p_train} = img_str_jpg;
+					split_A5{k}{1}.TrainingID{j_p_train} = img_id;
 					j_p_train = j_p_train + 1;
 				else
 					%Do nothing
 				end
 
 			%If element is neutral
-			elseif Attribute_Matrix(i,3) == 0
-				split_A3{k}{3}.Training{j_0_train} = img_str_jpg;
-				split_A3{k}{3}.TrainingID{j_0_train} = img_id;
+			elseif Attribute_Matrix(i,5) == 0
+				split_A5{k}{3}.Training{j_0_train} = img_str_jpg;
+				split_A5{k}{3}.TrainingID{j_0_train} = img_id;
 				j_0_train = j_0_train + 1;
 	
 			else
@@ -151,36 +157,36 @@ for k=1:1
 	
 		else
 			% If element is positive	
-			if Attribute_Matrix(i,3) == 1
+			if Attribute_Matrix(i,5) == 1
 				if virality_label(i) == 1
-					split_A3{k}{1}.Testing{j_p_test} = img_str_jpg;
-					split_A3{k}{1}.TestingID{j_p_test} = img_id;
+					split_A5{k}{1}.Testing{j_p_test} = img_str_jpg;
+					split_A5{k}{1}.TestingID{j_p_test} = img_id;
 					j_p_test = j_p_test + 1;			
 				elseif virality_label(i) == 0
-					split_A3{k}{2}.Testing{j_n_test} = img_str_jpg;
-					split_A3{k}{2}.TestingID{j_n_test} = img_id;
+					split_A5{k}{2}.Testing{j_n_test} = img_str_jpg;
+					split_A5{k}{2}.TestingID{j_n_test} = img_id;
 					j_n_test = j_n_test + 1;
 				else
 					%Do nothing
 				end		
 
 			% If element is negative
-			elseif Attribute_Matrix(i,3) == -1
+			elseif Attribute_Matrix(i,5) == -1
 				if virality_label(i) == 1
-					split_A3{k}{2}.Testing{j_n_test} = img_str_jpg;
-					split_A3{k}{2}.TestingID{j_n_test} = img_id;
+					split_A5{k}{2}.Testing{j_n_test} = img_str_jpg;
+					split_A5{k}{2}.TestingID{j_n_test} = img_id;
 					j_n_test = j_n_test + 1;
 				elseif virality_label(i) == 0
-					split_A3{k}{1}.Testing{j_p_test} = img_str_jpg;
-					split_A3{k}{1}.TestingID{j_p_test} = img_id;
+					split_A5{k}{1}.Testing{j_p_test} = img_str_jpg;
+					split_A5{k}{1}.TestingID{j_p_test} = img_id;
 					j_p_test = j_p_test + 1;
 				else
 					%Do nothing
 				end
 			% If element is neutral
-			elseif Attribute_Matrix(i,3) == 0
-				split_A3{k}{3}.Testing{j_0_test} = img_str_jpg;
-				split_A3{k}{3}.TestingID{j_0_test} = img_id;
+			elseif Attribute_Matrix(i,5) == 0
+				split_A5{k}{3}.Testing{j_0_test} = img_str_jpg;
+				split_A5{k}{3}.TestingID{j_0_test} = img_id;
 				j_0_test = j_0_test + 1;
 
 			else
@@ -192,10 +198,10 @@ end
 end
 
 %Save split
-split = split_A3;
+split = split_A5;
 
 %Notice that we are only doing 1 split.
 
 %End of everything
-save('./split_A3_Top.mat','split');
-save('./beautiful_N/split_A3_Top.mat','split');
+save('./split_A5_Top.mat','split');
+save('./sexual_N/split_A5_Top.mat','split');

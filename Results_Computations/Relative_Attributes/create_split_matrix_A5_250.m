@@ -19,12 +19,6 @@ pair_matrix = pair_matrix.pair_matrix_spot;
 virality_label = load('./virality_label.mat');
 virality_label = virality_label.virality_label_spot;
 
-% Load unique_offset_pairs_sort.
-% These will be the test images.
-
-unique_pairs = load('./unique_offset_pairs_sort.mat');
-unique_pairs = unique_pairs.unique_offset_pairs_sort;
-
 Top_Pairs = load('./Top_Pairs.mat');
 Top_Pairs = Top_Pairs.Top_Pairs;
 
