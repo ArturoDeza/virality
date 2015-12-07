@@ -47,6 +47,13 @@ http://arxiv.org/abs/1503.02318
 ### Virality Project Website
 http://arturodeza.github.io/virality/
 
+### Dataset Download
+https://computing.ece.vt.edu/~arturo/viral_datasetV2.mat
+
+### Poster Summary
+Presented at CVPR and at the Scene Understanding Workshop (SUNw), 2015.
+http://brie.uchicago.edu/ftp-www/Posters/virality_poster_update_final.pdf
+
 ### BibTex Citation
 
     @inproceedings{deza2015virality, 

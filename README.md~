@@ -49,7 +49,8 @@ http://arturodeza.github.io/virality/
 
 ### BibTex Citation
 
-    @inproceedings{deza2015virality, Author = {Arturo Deza and Devi Parikh}, 
+    @inproceedings{deza2015virality, 
+    Author = {Arturo Deza and Devi Parikh}, 
     Title = {Understanding Image Virality}, 
     Year = {2015}, 
     booktitle = {IEEE Conference on Computer Vision and Pattern Recognition (CVPR)} }
