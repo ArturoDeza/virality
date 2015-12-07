@@ -52,7 +52,12 @@ https://computing.ece.vt.edu/~arturo/viral_datasetV2.mat
 
 ### Poster Summary
 Presented at CVPR and at the Scene Understanding Workshop (SUNw), 2015.
+
 http://brie.uchicago.edu/ftp-www/Posters/virality_poster_update_final.pdf
+
+### Raw Dataset
+Oringinally created by the SNAP group at Stanford for the paper: "What's in a name?", 2013. H. Lakkaraju, J. J. McAuley & J. Leskovec.
+https://snap.stanford.edu/data/web-Reddit.html
 
 ### BibTex Citation
 
