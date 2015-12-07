@@ -68,6 +68,9 @@ https://snap.stanford.edu/data/web-Reddit.html
 ##### Compute Virality Classification Accuracy:
 ./Results_Computations/Relative_Attributes/virality_N/compute_virality_N_nodrop.m
 
+### Contact
+deza@dyns.ucsb.edu
+
 ### BibTex Citation
 
     @inproceedings{deza2015virality, 
