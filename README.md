@@ -61,10 +61,10 @@ https://snap.stanford.edu/data/web-Reddit.html
 
 ### Data and Code Walkthrough
 
-## Revisit Virality Computation Score:
+##### Revisit Virality Computation Score:
 ./Create_Code_Dataset/create_viral_dataset_annotation_doublecheck.m
 
-## Compute Virality Classification Accuracy:
+##### Compute Virality Classification Accuracy:
 ./Results_Computations/Relative_Attributes/virality_N/compute_virality_N_nodrop.m
 
 ### BibTex Citation

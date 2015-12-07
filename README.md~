@@ -59,6 +59,14 @@ http://brie.uchicago.edu/ftp-www/Posters/virality_poster_update_final.pdf
 Originally created by the SNAP group at Stanford for the paper: "What's in a name?", 2013. H. Lakkaraju, J. J. McAuley & J. Leskovec.
 https://snap.stanford.edu/data/web-Reddit.html
 
+### Data and Code Walkthrough
+
+## Revisit Virality Computation Score:
+./Create_Code_Dataset/create_viral_dataset_annotation_doublecheck.m
+
+## Compute Virality Classification Accuracy:
+./Results_Computations/Relative_Attributes/virality_N/compute_virality_N_nodrop.m
+
 ### BibTex Citation
 
     @inproceedings{deza2015virality, 
