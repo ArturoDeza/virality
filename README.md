@@ -1,7 +1,7 @@
 
 ## Understanding Image Virality Documentation
-Created by Arturo Deza. April,2015a
-Las updated: December, 2015.
+Created by Arturo Deza. April,2015a<br/>
+Last updated: December, 2015b.
 
 pair_matrix.mat: Contains all the viral and non viral images randomly paired as described in Section 3.3.1 of the paper. It is a [5039x2] matrix where the left column has the viral image id, and the right column has the non viral image id.
 
